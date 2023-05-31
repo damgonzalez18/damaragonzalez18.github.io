@@ -1,0 +1,224 @@
+/*Este es un comentario en CSS*/
+#contenedor{
+    border:5px solid black;   /* Colocamos un borde que indica los limites del todo el contenedor*/
+}
+
+
+#cabecera{   
+
+    background-color:pink; /*color de fondo de un elemento - contenedor div=cabecera*/
+    padding: 30px;
+    text-align: left;
+}
+
+#imglogo{
+
+width: 100px;
+height: auto;
+float: right;
+
+}
+
+
+.izquierdo {
+	float:left; /* Propiedad flotante css, especifica cómo debe flotar un elemento*/
+    width:5%; /*Ancho sección menu*/
+    text-align:center; /*Alineación del text*/
+    padding:20px; /* Relleno */
+	background-color:aqua; /*color morado con opacidad hsla*/
+
+
+    height: 100%;/* altura */             /*Añadimos la altura para que se cubra todo*/
+    margin-top:7px; /*Margen superior*/
+
+
+	
+}
+
+
+.derecho {
+	float:right; /* Propiedad flotante css, especifica cómo debe flotar un elemento*/
+    width:20%; /*Ancho sección menu*/
+    text-align:center; /*Alineación del text*/
+    padding:20px; /* Relleno */
+	background-color:aqua; /*color morado con opacidad hsla*/
+
+    height: 100%;/* altura */
+    margin-top:7px; /*Margen superior*/
+
+	
+}
+* {
+    box-sizing: border-box; /*La box-sizingpropiedad CSS nos permite incluir el relleno y el borde en el ancho y alto total de un elemento*/
+  }
+
+#scroll{
+
+    overflow: auto;
+}
+
+.cuerpo{
+
+background-color: pink;
+padding: 10px;
+text-align: justify;
+
+
+height: 100%;/* altura */
+margin-top:10px; /*Margen superior*/
+float:left; /* permite al elemento main flotar en una posicion*/
+width:60%; /* anchura del elemento */
+
+
+}
+
+
+#alinear{
+    display: flex;
+    
+    margin: 7px;
+overflow: auto;
+    }
+
+
+
+ @media only screen and (max-width:620px) { /*consulta de medios especificando aplicar condiciones a la pantalla , en este caso 
+	un ancho máximo de 620px para adaptarse y no se distorsionen los elementos que hay en ella*/
+	  .izquierdo, .derecho, .cuerpo {   /* se consideran los divs que hacen la función para maquetar nuestra página, utilizando las clases .menu, .main, .right 
+	  que seran ordenados y adaptados a la pantalla */
+		width:100%;
+        height: auto;
+        
+        
+	  }   
+    .img{
+
+        width:100%;
+        max-width:400px;
+    }
+     
+    video{
+
+        width:100%;
+        max-width:400px;
+    }
+
+    video{
+
+        width:100%;
+        max-width:400px;
+    }
+
+    table{
+
+        width:100%;
+        max-width:400px;
+    }
+
+}
+    
+	
+
+
+  
+
+.pie{
+background-color:#ad32ff;
+text-align: center;
+padding: 10px;  
+}
+
+body{
+    background-color:pastel blue;
+    background-image: 
+    https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngwing.com%2Fes%2Ffree-png-bqrdg&psig=AOvVaw28sjQAg_tgzlmZIhwaa4C-&ust=1683232439403000&source=images&cd=vfe&ved=0CA4QjRxqFwoTCIiUif-E2v4CFQAAAAAdAAAAABAE("imagenes/drogas pagina.png");
+
+}
+
+
+h1, h2, h3, h4{
+    font-family:Impact,'Arial Narrow Bold', sans-serif;
+    text-decoration: underline palegreen;
+
+}
+
+
+p{
+  font-size: 12;
+  font-family: Arial;
+  text-align:justify;
+}
+
+a{
+    color: orchid;
+    font-family: cursive;
+    font-weight:bolder ;
+}
+
+
+.img{
+    display:block; /*display=elemento es bloque o linea. */
+    margin-left:auto;
+    margin-right: auto;
+}
+
+
+
+.class1 {
+    
+    width:640px;
+     height:480px;
+}
+
+
+.class2 {
+    
+    width:440px;
+     height:380px;
+}
+
+.class3{
+
+     
+    width:340px;
+     height:280px;
+}
+
+
+video{
+    width:640;
+     height:480;
+     margin-left:auto;
+     margin-right: auto;
+     display: block;
+     
+}
+
+table, td, th {  /* estilo a la tabla creada en index.html*/
+    border: 2px solid blue; /*Bordes  con un grosor de 7px, con un color solido azul*/
+    width:500;
+    height:150;
+    margin-left:auto;
+    margin-right: auto;
+
+}
+
+
+
+.izquierdo a {
+    background-color:hsla(0.19turn,100%,50%,0.5);  /*Color en link de menú - Matiz (colores) Saturación(grises) y luminosidad(negro y blanco) */ 
+    padding:7px; /*Relleno del link que da efecto de botones */
+    margin-top:7px; /* Margen entre un link  y otro*/
+    display:block; /*Pantalla valor de bloque Un elemento block siempre tiene algo de espacio por encima y debajo, que lo separa de los demás elementos, y no acepta ningún otro elemento a su lado*/
+    width:100%; /* anchura en relleno de los link*/
+    color:white; /* Color del link*/
+    font-weight: bold;/*peso o grueso de la letra*/
+    text-align:center; /*alinear el texto al centro*/
+    text-decoration:none; /* sin la linea que caracteriza un enlace*/
+}
+
+
+.izquierdo a:hover{ /*Efecto hover para menus al seleccionar  - efecto hover es la alteración del aspecto de un componente*/
+    background-color:hsla(0.5turn,100%,30%,0.2);  /* El efecto hover hace que al seleccionar con el puntero 
+    cualquiera de los link, se torne de otro color al establecido en el relleno*/
+    }
